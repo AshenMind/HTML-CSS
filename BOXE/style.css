@@ -1,0 +1,256 @@
+@font-face {
+    font-family: "LiberationSans";
+    src: url("fonts/LiberationSans-Regular-webfont.ttf") format("truetype");
+}
+body{
+    font-family: "LiberationSans", serif;
+}
+header{ /* background pour le header*/
+    background-image: url(images/background.jpg);
+    background-repeat: repeat;
+}
+section.header{ /* marge et position des deux sec pour le header*/
+    margin-right: 25%;
+    margin-left: 25%;
+    display: flex;
+    justify-content: space-between;
+}
+section.head1{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+p.head1{
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 20px;
+}
+span.head1{
+    color: orange;
+}
+section.head2{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+p.head2{/*organisation de la parti droite du header*/
+    margin-top: 45px;
+    margin-bottom: 50px;
+    font-size: 25px;
+    
+}
+div.head2{
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    justify-content: space-between;
+}
+div.head2 a{
+    text-decoration: none;
+    color: black;
+}
+main{
+    background-color: rgb(37, 37, 37);
+}
+section.main{ /* positionnement des element du main*/
+    margin-right: 25%;
+    margin-left: 25%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: -50px;
+
+}
+section.main section{ /* coloration de la parti central du main*/
+    background-color: white;
+}
+img.phototop{/*premiere photo du main*/
+    margin-top: 10px;
+    width: 100%;
+}
+section.lignegant{/* flex pour les ligne des acticles*/
+    display: flex;
+    justify-content: space-around;
+}
+div.actgant{
+    width: 35%;
+    margin-top: 20px;
+}
+div.actgant2{ /* pour la marge de la deuxieme ligne*/
+    width: 35%;
+    margin-top: 20px;
+    margin-bottom: 80px;
+}
+img.imggant{
+    width: 100%;/*image gant*/
+}
+p.descgant{/*description de l'article*/
+    font-size: 80%;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+div.prix{/* alignement des prix et du bouton vente*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+div.prix p{
+    margin: 0;
+}
+div.vente{
+    width: 50%;
+    height: 30px;
+    background-color: rgb(37, 37, 37);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+a.vente{
+    color: white;
+    text-decoration: none;
+}
+p.prixinit{/* prix initial barré*/
+    font-weight: bold;
+    text-decoration: line-through;
+    font-size: 180%;
+}
+p.prixfini{/* prix apres reduc*/
+    color: orange;
+    font-weight: bold;
+    font-size: 200%;
+}
+div.promo{/*placement de la promo*/
+    position: relative;
+    bottom: 85%;
+    left: 80%;
+    width: 100px;
+    height: 50px;
+    background-color: rgb(37, 37, 37);
+    border-radius: 10px 10px 10px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+p.promo{
+    color: orange;
+    font-weight: bold;
+    font-size: 200%;
+}
+div.liens{/*4 liens en bas de la page*/
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: white;
+    width: 80%;
+    height: 50px;
+    bottom: 20px;
+    left: 10%;
+    border-radius: 10px 10px 10px 10px;
+}
+a.liens{
+    text-decoration: none;
+    color: black;
+}
+p.rond{ 
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background-color: grey;
+    color: white;
+
+}
+footer{/* début du footer*/
+    background-color: rgb(77, 77, 77);
+    
+}
+section.footer{
+    margin-left: 25%;
+    margin-right: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+section.footerlogo{/* 4 logo dans le footer*/
+    display: flex;
+}
+div.footerlogo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 60px;
+    text-align: center;
+}
+p.footerlogo{
+    color: white;
+}
+section.rzo{/*acces au logo rzo et lien*/
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    width: 30%;
+    margin-top: 30px;
+}
+hr{
+    width: 100%;
+}
+p.cr{/*coryright*/
+    text-align: center;
+    background-color: rgb(77, 77, 77);
+    color: white;
+}
+@media (max-width: 576px){ /*adaptation au format telephone*/
+
+    section.header{/* reduction de la marge + colonne et remise en page pour le main*/
+        margin-right: 3%;
+        margin-left: 3%;
+        flex-direction: column;
+    }
+    section.head1{
+        width: 100%;
+        align-items: center;
+    }
+    section.head2{
+        width: 100%;
+        align-items: center;
+    } 
+    p.head2{
+        margin-top: 30px;
+        margin-bottom: 30px;
+        width: 100%;
+        text-align: start;
+    }
+    div.head2{
+        width: 100%;
+        justify-content: space-around;
+    }
+    section.main{
+        margin-right: 3%;
+        margin-left: 3%;
+    }
+    section.lignegant{
+        flex-wrap: wrap;
+    }
+    div.actgant{/* mise en colonne du flex pour les articles*/
+        width: 55%;
+    }
+    div.actgant2{
+        width: 55%;
+    }
+    section.footer{ /* marge footer*/
+        margin-left: 3%;
+        margin-right: 3%;
+    }
+    section.footerlogo{
+        flex-wrap: wrap;
+    }
+    div.footerlogo{
+        width: 50%;
+    }
+    section.rzo{
+        width: 50%;
+    }
+}
